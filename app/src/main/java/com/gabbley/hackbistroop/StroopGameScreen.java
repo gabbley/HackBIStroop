@@ -89,23 +89,9 @@ public class StroopGameScreen extends AppCompatActivity {
     //identifies which button is clicked
     public void whichButtonClicked(View view) {
         switch (view.getId()) {
-            case R.id.btnYellow: stroopCompare = "yellow";
-                break;
-            case R.id.btnGreen: stroopCompare = "green";
-                break;
-            case R.id.btnRed : stroopCompare = "red";
-                break;
-            case R.id.btnBlue : stroopCompare = "blue";
-                break;
-            case R.id.btnPurple : stroopCompare = "purple";
-                break;
-            case R.id.btnBlack : stroopCompare = "black";
-                break;
-            case R.id.btnOrange : stroopCompare = "orange";
-                break;
-            case R.id.btnPink : stroopCompare = "pink";
-                break;
-            default: stroopCompare = "no color";
+
+            //if the view ID is a certain button, set stroopCompare to the color String (ex. "Yellow")
+
         }
 
     }
