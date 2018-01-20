@@ -26,7 +26,7 @@ public class StroopGameScreen extends AppCompatActivity {
     public void initialSetup(){
 
         //sets main word to random color (text and color)
-        mainWord = (TextView) findViewById(R.id.txtStroopWord);
+        mainWord = findViewById(R.id.txtStroopWord);
         mainWord.setTextColor(randColor());
         mainWord.setText(getRandColorWord());
 
@@ -35,7 +35,7 @@ public class StroopGameScreen extends AppCompatActivity {
 
 
         //adds color effect to title on game screen
-        TextView gameTitle = (TextView) findViewById(R.id.lblTitle);
+        TextView gameTitle = findViewById(R.id.lblTitle);
         discoTitle(gameTitle);
 
     }
@@ -60,14 +60,6 @@ public class StroopGameScreen extends AppCompatActivity {
         return colorArray[(int)(Math.random() * colorArray.length) ]; //error, thinks length is zero
     }
 
-    //displays score on screen
-    public void viewScore(){
-
-        //Missing code
-        //Access the TextView for the score by initializing a TextView variable
-
-        //set the text to the current score
-    }
 
     //randomly changes text view color every .5 second
     public void discoTitle(final TextView disco){
@@ -138,6 +130,15 @@ public class StroopGameScreen extends AppCompatActivity {
         return colorNames[(int)(Math.random()*colorNames.length)];
     }
 
+    //displays score on screen
+    public void viewScore(){
+
+        //Missing code
+        //Access the TextView for the score by initializing a TextView variable
+
+        //set the text to the current score
+    }
+
     //updates score, new word
     public void scoreUpdate(){
 
@@ -152,6 +153,8 @@ public class StroopGameScreen extends AppCompatActivity {
 
     //resets score to zero
     public void resetScore(View view){
+        //Missing Code
+
         //set score variable to -1
         scoreUpdate();
     }
